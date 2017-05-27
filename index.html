@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Sharing Is Caring</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i" rel="stylesheet">
+  </head>
+  <body>
+  
+  	<section class="full" id="gradient">
+  		<h1>No Matter Who You Are...</h1>
+  		<button>Ready To Change?</button>
+  	</section>
+
+  	<section class="full" id="baby">
+  		<h2 class="head">Who do you care about?</h2>
+      <br />
+      <br />
+      <br />
+      <div class="scrolling-words">
+        <p id="scroll">Son?</p>
+        <p id="scroll">Daughter?</p>
+        <p id="scroll">Father?</p>
+        <p id="scroll">Mother?</p>
+      </div>
+      <br />
+      <br />
+      <br />
+      <h3>DID YOU KNOW?!</h3>
+      <p class="text">From 1930’s, water consumption has risen by <strong>1% EACH YEAR...</strong></p>
+      <br />
+      <p class="text">Some parts of the world cannot get clean, safe water? What if that were you, or that someone you care about?</p>
+      <p class="text">At the rate we are going the clean, safe water may not be here for our family, friends and even yourself.</p>
+  	</section>
+
+  	<section class="full" id="green">
+  		<h2 class="head">What Can I Do?</h2>
+      <br />
+  		<h3 id="title-green">GO GREEN!</h3>
+  		<h4 id="waste">I'm not saying cut down,<br />I'm saying stop wasting!</h4>
+      <br />
+      <br />
+      <h6>Stopping Waste Waste:</h6>
+      <br />
+      <div class="left">
+        <p>Keeping the tap off while brushing your teeth.</p>
+        <br />
+        <p>Don’t use your toilet as a dustbin.</p>
+        <br />
+        <p>Use the left over water from your night time drinks to water houseplants.</p>
+      </div>
+      <div class="right">
+        <p>Invest in a water butt and connect it to your drainpipe in your garden.</p>
+        <br />
+        <p>Install a cistern displacement device in your toilet.</p>
+      </div>
+  	</section>
+
+  	<section class="full" id="blue">
+  		<h2 class="head">How else can I help?</h2>
+      <br />
+      <br />
+  		<h5>#HelpingHand</h5>
+      <br />
+      <br />
+  		<h6>There are many ways of helping</h6>
+  		<ul>
+  			<li>Share this link!</li>
+  			<li>Donate so we can help those without water</li>
+  			<li>Do further research</li>
+  			<li>And finally, your brilliant idea</li>
+  		</ul>
+  		<h6>I'll Share!</h6>
+  	</section>
+
+  </body>
+
+  <script>
+  Webflow.push(function () {
+    var fulls = $('.full');
+    var win = $(window);
+    Webflow.resize.on(function () {
+      fulls.height(win.height());
+    });
+  });
+</script>
+
+</html>
