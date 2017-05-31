@@ -337,7 +337,7 @@ p#list-ben {
   z-index: 100;
 }
 #scrolldown p {
-  font: 700 0.7em/1em 'Avenir',sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   animation-duration: 2s;
   animation-fill-mode: both;
   animation-iteration-count: infinite;
