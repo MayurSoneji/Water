@@ -233,36 +233,144 @@ p {
    font-family: 'Source Sans Pro', sans-serif;
 }
 
-input {
+.feedback-input {
+  color:white;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight:500;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: transparent;
+  border:2px solid white;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width:100%;
   box-sizing: border-box;
-  border: solid 2px #c7d6e6;
-  text-align: left;
+  outline:0;
+}
+
+::-webkit-input-placeholder {
+	color: white;
+}
+
+[type="submit"] {
+  font-family: 'Source Sans Pro', sans-serif;
   width: 100%;
-  vertical-align: bottom;
-  -webkit-appearance: none;
-  width: 100px;
+  background:white;
+  border: 2px solid white;
+  cursor:pointer;
+  color: #48B3D3;
+  font-size:18px;
+  padding-top:10px;
+  padding-bottom:10px;
+  transition: all 0.3s;
+  margin-top:-4px;
+  font-weight:700;
+  border-radius: 5px;
+}
+[type="submit"]:hover { 
+	background:white;
+	border: 2px solid white;
+	border-radius: 5px;
+	}
+
+h6#no-space {
+	padding-left: 0;
 }
 
-.preinput ~ input {
-  padding-left: 24px;
+p#list-ben {
+	line-height: 30px;
+	padding-left: 0;
 }
 
-.btn {
-  cursor: pointer;
+#donate {
+	float: left;
+	padding-left: 20%
+}
+
+.feedback-input-amount {
+  color:white;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight:500;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: transparent;
+  border:2px solid white;
+  transition: all 0.3s;
+  padding: 13px;
+  width:25%;
   box-sizing: border-box;
+  outline:0;
   text-align: center;
-  float: left;
-  height: 40px;
-  line-height: 40px;
+  align-items: center;
 }
 
-.btn-yes {
-  background-color: #2279dc;
-  background: linear-gradient(to bottom,#2279dc 0%,#0d5cb6 100%);
-  color: white;
-  font-weight: 700;
-  margin-bottom: 10px;
-  text-transform: uppercase;
+#donate-btn {
+  font-family: 'Source Sans Pro', sans-serif;
+  width: 50%;
+  background:white;
+  border: 2px solid white;
+  cursor:pointer;
+  color: #48B3D3;
+  font-size:18px;
+  transition: all 0.3s;
+  font-weight:700;
+  border-radius: 5px;
+}
+
+#contact-right {
+	max-width: 33%;
+	float: right;
+	padding-right: 19%;
+}
+
+#scrolldown {
+  bottom: 40px;
+  height: 100px;
+  margin-left: -50px;
+  position: absolute;
+  left: 50%;
   text-align: center;
   width: 100px;
+  z-index: 100;
+}
+#scrolldown p {
+  font: 700 0.7em/1em 'Avenir',sans-serif;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-name: scroll;
+  color: #fff;
+}
+#scrolldown > p {
+  text-transform: uppercase;
+  text-indent: 3px;
+}
+.mouse {
+  border: 2px solid #fff;
+  border-radius: 13px;
+  display: block;
+  height: 46px;
+  left: 50%;
+  margin: 10px 0 0 -13px;
+  position: absolute;
+  width: 26px;
+}
+.mouse span {
+  display: block;
+  font-size: 1.5em;
+  margin: 6px;
+  padding-right: 7px;
+}
+@keyframes scroll {
+  0% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
 }
