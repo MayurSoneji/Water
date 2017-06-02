@@ -212,7 +212,7 @@
         initialised = true;
 
         $.easing['easeOutExpo'] = function(x, t, b, c, d) {
-            return (t==d) ? b+c : c * (-Math.pow(2, -10 * t/d) + 1) + b;
+            return (t==d) ? b+c : c * (-Math.pow(2, -15 * t/d) + 1) + b;
         };
 
         manualScroll = {
@@ -564,7 +564,7 @@
             setTimeout(function() {
                 //instant,callbacks
                 manualScroll.calculateNearest(true,false);
-            },200);
+            },10000);
         }
         if(heights.length) {
             manualScroll.init();
